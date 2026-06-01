@@ -1,16 +1,3 @@
-"""
-controller.py — MVC Controller Layer
-======================================
-Sits between the Model and the View.
-• Receives user actions (button clicks, form submits).
-• Reads / writes AppState.
-• Calls Model methods to persist or retrieve data.
-• Calls back into the View only via the navigate_to / show_snack callbacks
-  that are injected at startup — the Controller never imports flet directly.
-
-All navigation and business decisions live here; all SQL lives in model.py;
-all widget construction lives in view.py (which wraps claude_cs.py).
-"""
 
 from model import (
     AppState,
