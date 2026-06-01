@@ -1,12 +1,4 @@
-"""
-model.py — MVC Model Layer
-===========================
-Wraps the database and business-logic helpers that already exist inside
-claude_cs.py without touching a single line of that file.
 
-All raw SQLite calls and pure-logic functions are exposed here so that
-the Controller can call them by name instead of embedding SQL everywhere.
-"""
 
 import sqlite3
 import random
