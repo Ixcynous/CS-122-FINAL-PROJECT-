@@ -1,22 +1,3 @@
-"""
-view.py — MVC View Layer
-=========================
-The View's only job is to render screens and wire user events to Controller
-calls.  Because the entire UI is already beautifully implemented in
-claude_cs.py we keep that file completely untouched and delegate all
-rendering to its navigate_to() logic.
-
-This thin wrapper:
-  1. Bootstraps the Flet page (same settings as the original).
-  2. Creates the Controller with callbacks that point back here.
-  3. Calls into claude_cs.main() to run the original navigate_to pipeline,
-     but replaces the global-state mechanism with the Controller's AppState
-     so the MVC layers are properly connected.
-
-No original code is changed.  The View is the adapter between the MVC
-framework and the existing monolithic UI module.
-"""
-
 import flet as ft
 
 # Original module — untouched
